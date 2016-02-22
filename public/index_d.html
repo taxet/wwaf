@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html ng-app="WwafApp">
+  <head>
+    <title>环球车网</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    name="viewport">
+    <meta content="环球车网" name="keywords">
+    <meta content="环球车网" name="description">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="msvalidate.01" content="F9B21A8F267C6D1ED674696961603921">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="stylesheet" href="stylesheets/styles.css" />
+<!--
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css" />
+    <link res="stylesheet" href="libs/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="libs/Ionicons/css/ionicons.min.css" />
+    <link rel="stylesheet" href="stylesheets/styles.css" />
+-->
+  </head>
+  <body ng-controller="LangCtrl">
+    <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                  <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="images/logo/wwaf_logo.png">
+                    <img alt="Brand" src="images/logo/wwaf_logo2.png">
+                  </a>
+            </div>
+            <div class="navbar-collapse collapse" id="bs-navbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a ng-click="toggleLang()" href="">{{msg.another}}</a>
+                </li>
+            </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a>{{msg.index}}</a>
+                    </li>
+                    <li>
+                        <a href="#">{{msg.buy}}</a>
+                    </li>
+                    <li>
+                        <a href="#">{{msg.sell}}</a>
+                    </li>
+                    <li>
+                        <a href="#">{{msg.help}}</a>
+                    </li>
+                    <li>
+                        <a  data-toggle="modal" title="A free Bootstrap video landing theme" href="#aboutModal">{{msg.login}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="first">
+        <div class="header-content">
+            <div class="inner">
+                <h1 class="cursive">精品汽车，轻松买卖</h1>
+                <h4>环球车网——最大的一站式二手车交易广场</h4>
+                <!--
+                <a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl">Toggle Video</a> &nbsp; <a href="#one" class="btn btn-primary btn-xl page-scroll">Get Started</a>
+              -->
+                <a href="#" class="btn btn-red btn-primary btn-xl" style="margin-right:20px">{{msg.buy | uppercase}}</a>&nbsp;<a href="#" class="btn btn-blue btn-primary btn-xl" style="margin-left:20px">{{msg.sell | uppercase}}</a>
+            </div>
+        </div>
+        <!--
+        <video autoplay="" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="https://s3-us-west-2.amazonaws.com/coverr/poster/Traffic-blurred2.jpg" id="video-background">
+            <source src="https://s3-us-west-2.amazonaws.com/coverr/mp4/Traffic-blurred2.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+        -->
+    </header>
+    <section id="one">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h2 class="margin-top-0">总有一款车，你与“她”的邂逅可遇而不可求</h2>
+                    <br>
+                    <p>
+                        有车的生活是幸福与甜蜜的，但追求心中的dream car的脚步或许永远不会停歇。还在为选车挑车头疼？不妨看看环球车网您推荐精选主题！从用车体验与生活的角度跟你一起了解名车，二手车。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="two" class="bg-primary no-padding">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="images/div3.jpg" alt="Chania">
+            <div class="carousel-caption">
+              <h3>Slide 1</h3>
+              <p>This is Slide 1</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/div3.jpg" alt="Chania">
+            <div class="carousel-caption">
+              <h3>Slide 2</h3>
+              <p>This is Slide 2</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/div3.jpg" alt="Chania">
+            <div class="carousel-caption">
+              <h3>Slide 3</h3>
+              <p>This is Slide 3</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/div3.jpg" alt="Chania">
+            <div class="carousel-caption">
+              <h3>Slide 4</h3>
+              <p>This is Slide 4</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">&lt;&lt;</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">&gt;&gt;</span>
+        </a>
+      </div>
+    </section>
+    <section id="last" class="padding-70 text-center">
+      <div class="text-center"><h1>我们的承诺</h1></div>
+          <div class="container-fluid">
+              <div class="row no-gutter no-container">
+                  <div class="col-lg-3 col-sm-6" style="background:url(images/ele1.png);background-repeat:no-repeat;background-position: top center;">
+                    <img src="images/ele1.png">
+                    <div class="ele-no1">
+                      选购汽车往往大家非常头疼的事。在环球车网，我们会为您提供全方位的汽车评估与报告，以便让您不需要过多的专业知识便可以购买到实惠可靠的车辆。
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6" style="background:url(images/ele2.png);background-repeat:no-repeat;background-position: top center;">
+                    <img src="images/ele2.png">
+                    <div class="ele-no2">
+                      <span class="glyphicon glyphicon-signal"></span> 全方位汽车报告<br/>
+                      <span class="glyphicon glyphicon-lock"></span> 30 天 /100 miles 质保
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6" style="background:url(images/ele3.png);background-repeat:no-repeat;background-position: top center;">
+                    <img src="images/ele3.png">
+                    <div class="ele-no3">
+                      为了节省您宝贵的时间，环球车网提供一站式的销售服务。我们的技术人员会亲自上门，对您的车辆进行全面评估，并根据我们庞大的价格系统进行合理的估价，帮您轻松卖车。
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6" style="background:url(images/ele4.png);background-repeat:no-repeat;background-position: top center;">
+                    <img src="images/ele4.png">
+                    <div class="ele-no4" style="padding:70px">
+                      <span class="glyphicon glyphicon-ok-circle"></span> 一站式卖车服务
+                    </div>
+                  </div>
+              </div>
+          </div>
+    </section>
+    <footer id="footer">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 column">
+                    <h4>{{msg.aboutus}}</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="">{{msg.ourteam}}</a></li>
+                        <li><a href="">{{msg.ourbel}}</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 column">
+                    <h4>{{msg.contactus}}</h4>
+                    <ul class="list-unstyled">
+                        <li><span class="glyphicon glyphicon-earphone"></span> (858)345-0797</li>
+                        <li><span class="glyphicon glyphicon-envelope"></span><a href="mailto:wwaf@gmail.com"> wwaf@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 column">
+                    <h4>{{msg.opentime}}</h4>
+                    <ul class="list-unstyled">
+                        <li>{{msg.mtf}}</li>
+                        <li>10:00AM - 6：00PM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+        	<div class="modal-body ">
+            <img src="images/logo/wwaf_logo.png"></img>
+            <p>欢迎回来，环球车网。</p>
+            <form method="post" action="" name="loginForm">
+              <div class="forms-input">
+                <input style="border-top-right-radius: 5px;border-top-left-radius: 5px;" type="text" class="span3" name="pid" placeholder="{{msg.username}}">
+                <input type="text" class="span3" name="pwd" placeholder="{{msg.password}}">
+              </div>
+              <button type="submit" class="btn btn-primary btn-yellow btn-lg">
+                {{msg.login}}
+              </button>
+            </form>
+            <div class="signup">忘了密码？没关系！通过<a href="">邮箱找回</a>  <div class="right"><a href="">{{msg.signup}}</a></div></div>
+
+        	</div>
+        </div>
+        </div>
+    </div>
+    <!--scripts loaded here from cdn for performance -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="javascripts/scripts.js"></script>
+<!--
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="libs/jquery-easing/jquery.easing.min.js"></script>
+    <script src="libs/wow/dist/wow.min.js"></script>
+    <script src="javascripts/scripts.js"></script>
+-->
+    <!-- angular.js -->
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="javascripts/controller/ctrl.js"></script>
+  </body>
+</html>
