@@ -1,0 +1,25 @@
+
+@font-face{
+  font-family: 'fBold';
+  src: url('../fonts/fBold.ttf');
+}
+@font-face{
+  font-family: 'fExtraLight';
+  src: url('../fonts/fExtraLight.ttf');
+}
+@font-face{
+  font-family: 'fHeavy';
+  src: url('../fonts/fHeavy.ttf');
+}
+@font-face{
+  font-family: 'fLight';
+  src: url('../fonts/fLight.ttf');
+}
+@font-face{
+  font-family: 'fMedium';
+  src: url('../fonts/fMedium.ttf');
+}
+@font-face{
+  font-family: 'fRegular';
+  src: url('../fonts/fRegular.ttf');
+}
