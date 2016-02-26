@@ -40,24 +40,24 @@
             <div class="navbar-collapse collapse" id="bs-navbar">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a ng-click="toggleLang()" href="">{{msg.another}}</a>
+                    <a ng-click="toggleLang()" href="" >{{'another' | translate}}</a>
                 </li>
             </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active">
-                        <a>{{msg.index}}</a>
+                        <a>{{'index' | translate}}</a>
                     </li>
                     <li>
-                        <a href="#">{{msg.buy}}</a>
+                        <a href="#">{{'buy' | translate}}</a>
                     </li>
                     <li>
-                        <a href="#">{{msg.sell}}</a>
+                        <a href="#">{{'sell' | translate}}</a>
                     </li>
                     <li>
-                        <a href="#">{{msg.help}}</a>
+                        <a href="#">{{'help' | translate}}</a>
                     </li>
                     <li>
-                        <a  data-toggle="modal" title="A free Bootstrap video landing theme" href="#aboutModal">{{msg.login}}</a>
+                        <a  data-toggle="modal" title="A free Bootstrap video landing theme" href="#aboutModal">{{'login' | translate}}</a>
                     </li>
                 </ul>
             </div>
@@ -71,7 +71,7 @@
                 <!--
                 <a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl">Toggle Video</a> &nbsp; <a href="#one" class="btn btn-primary btn-xl page-scroll">Get Started</a>
               -->
-                <a href="#" class="btn btn-red btn-primary btn-xl" style="margin-right:20px">{{msg.buy | uppercase}}</a>&nbsp;<a href="#" class="btn btn-blue btn-primary btn-xl" style="margin-left:20px">{{msg.sell | uppercase}}</a>
+                <a href="#" class="btn btn-red btn-primary btn-xl" style="margin-right:20px">{{'buy' | translate | uppercase}}</a>&nbsp;<a href="#" class="btn btn-blue btn-primary btn-xl" style="margin-left:20px">{{'sell'| translate | uppercase}}</a>
             </div>
         </div>
         <!--
@@ -185,23 +185,23 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col-xs-12 col-sm-4 column">
-                    <h4>{{msg.aboutus}}</h4>
+                    <h4>{{'aboutus'  | translate}}</h4>
                     <ul class="list-unstyled">
-                        <li><a href="">{{msg.ourteam}}</a></li>
-                        <li><a href="">{{msg.ourbel}}</a></li>
+                        <li><a href="">{{'ourteam'  | translate}}</a></li>
+                        <li><a href="">{{'ourbel'  | translate}}</a></li>
                     </ul>
                 </div>
                 <div class="col-xs-12 col-sm-4 column">
-                    <h4>{{msg.contactus}}</h4>
+                    <h4>{{'contactus' | translate}}</h4>
                     <ul class="list-unstyled">
                         <li><span class="glyphicon glyphicon-earphone"></span> (858)345-0797</li>
                         <li><span class="glyphicon glyphicon-envelope"></span><a href="mailto:wwaf@gmail.com"> wwaf@gmail.com</a></li>
                     </ul>
                 </div>
                 <div class="col-xs-12 col-sm-4 column">
-                    <h4>{{msg.opentime}}</h4>
+                    <h4>{{'opentime' | translate}}</h4>
                     <ul class="list-unstyled">
-                        <li>{{msg.mtf}}</li>
+                        <li>{{'mtf' | translate}}</li>
                         <li>10:00AM - 6：00PM</li>
                     </ul>
                 </div>
@@ -216,14 +216,14 @@
             <p>欢迎回来，环球车网。</p>
             <form method="post" action="" name="loginForm">
               <div class="forms-input">
-                <input style="border-top-right-radius: 5px;border-top-left-radius: 5px;" type="text" class="span3" name="pid" placeholder="{{msg.username}}">
-                <input type="text" class="span3" name="pwd" placeholder="{{msg.password}}">
+                <input style="border-top-right-radius: 5px;border-top-left-radius: 5px;" type="text" class="span3" name="pid" placeholder="{{'username' | translate}}">
+                <input type="text" class="span3" name="pwd" placeholder="{{'password' | translate}}">
               </div>
               <button type="submit" class="btn btn-primary btn-yellow btn-lg">
-                {{msg.login}}
+                {{'login'  | translate}}
               </button>
             </form>
-            <div class="signup">忘了密码？没关系！通过<a href="">邮箱找回</a>  <div class="right"><a href="">{{msg.signup}}</a></div></div>
+            <div class="signup">忘了密码？没关系！通过<a href="">邮箱找回</a>  <div class="right"><a href="">{{'signup' | translate}}</a></div></div>
 
         	</div>
         </div>
@@ -244,6 +244,11 @@
     <script src="javascripts/scripts.js"></script>
     <!-- angular.js -->
     <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular-translate/angular-translate.min.js"></script>
+    <script src="libs/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+    <script src="libs/angular-local-storage/dist/angular-local-storage.min.js"></script>
+    <!-- own js -->
     <script src="javascripts/controller/ctrl.js"></script>
+    <script src="javascripts/controller/lang-ctrl.js"></script>
   </body>
 </html>
