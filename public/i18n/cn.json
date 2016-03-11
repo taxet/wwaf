@@ -16,5 +16,7 @@
     "password": "密码",
     "phone": "电话",
     "confirm": "确认",
+    "lastname": "姓",
+    "firstname": "名",
     "another": "En"
 }

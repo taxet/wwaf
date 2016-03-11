@@ -1,0 +1,96 @@
+/*
+
+Landing Zero theme - A free landing page theme from BootstrapZero
+http://www.bootstrapzero.com
+
+*/
+
+@import url(fonts.css);
+
+#blog-info{
+  margin-right: 0;
+  padding-right: 8%;
+  padding-left: 43%;
+  text-align: right;
+  font-family: fLight;
+  min-height: 470px;
+  padding-top: 120px;
+  padding-bottom: 20px;
+}
+
+#blog-info h4{
+  text-align:left;
+  color: #00cffa;
+  font-size: 12px;
+  margin-bottom: 20px;
+  border-left: 2px #00cffa solid;
+  padding-left: 10px;
+}
+#blog-info h2{
+  text-align:left;
+  font-size: 30px;
+}
+#blog-info p{
+  text-align:left;
+  font-size: 12px;
+}
+
+#one {
+  color: black;
+  font-family: 'fLight';
+}
+
+#one h2{
+  font-size: 30px;
+}
+#one p{
+  font-size: 12px;
+  color: black;
+}
+
+#last h1{
+  margin-bottom: 70px;
+  font-size: 30px;
+  font-family: "fBold";
+  color: black;
+}
+
+.ele-no1, .ele-no2, .ele-no3, .ele-no4 {
+  padding-top: 20px;
+  margin-top: -150px;
+  height: 150px;
+  z-index: 1;
+  max-width: 275px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ele-no1, .ele-no3{
+  font-family:"fLight";
+  font-size: 12px;
+  color: black;
+  max-width: 240px;
+  border-top: 1px solid black;
+}
+.ele-no1 p, .ele-no3 p{
+  font-family:"fLight";
+  font-size: 12px;
+  color: black;
+}
+.ele-no1 h2, .ele-no3 h2{
+  font-family:"fRegular";
+  font-size: 24px;
+}
+
+.ele-no2, .ele-no4{
+  font-family:"fRegular";
+  font-size: 14px;
+  color: white;
+}
+
+.ele-no2{
+  background: rgba(255, 0, 56, 0.54);
+}
+
+.ele-no4{
+  background: rgba(0, 207, 250, 0.53);
+}

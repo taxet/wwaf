@@ -16,5 +16,7 @@
     "password": "password",
     "phone": "phone",
     "confirm": "confirm",
+    "lastname": "last name",
+    "firstname": "first name",
     "another": "中"
 }

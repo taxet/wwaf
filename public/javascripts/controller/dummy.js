@@ -1,3 +1,4 @@
+(function() {
 var app = angular.module('WwafApp')
 app.controller('DummyCtrl', ['$scope', function($scope) {
   $scope.blogs=[
@@ -21,3 +22,4 @@ app.controller('DummyCtrl', ['$scope', function($scope) {
     }
   ];
 }])
+})();

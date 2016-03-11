@@ -11,11 +11,16 @@
     <meta content="环球车网" name="description">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="msvalidate.01" content="F9B21A8F267C6D1ED674696961603921">
-    <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css" />
-    <link res="stylesheet" href="/libs/animate.css/animate.min.css" />
-    <link rel="stylesheet" href="/libs/Ionicons/css/ionicons.min.css" />
-    <link rel="stylesheet" href="/stylesheets/overall.css" />
-    <link rel="stylesheet" href="/stylesheets/index.css" />
+        <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css" />
+        <link res="stylesheet" href="/libs/animate.css/animate.min.css" />
+        <link rel="stylesheet" href="/libs/Ionicons/css/ionicons.min.css" />
+        <link rel="stylesheet" href="/stylesheets/overall.css" />
+<!--
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css" />
+    <link res="stylesheet" href="libs/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="libs/Ionicons/css/ionicons.min.css" />
+    <link rel="stylesheet" href="stylesheets/styles.css" />
+-->
   </head>
   <body ng-controller="LangCtrl">
     <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
@@ -58,15 +63,15 @@
             </div>
         </div>
     </nav>
-    <header id="first" style="background-image: url('../images/title-image.png');">
+    <header id="first" style="background:url('/images/tmp/blog-header.jpg');height:400px">
         <div class="header-content">
             <div class="inner">
-                <h1 class="cursive iniinvisible">精品汽车，轻松买卖</h1>
+                <h1 class="cursive ">精品汽车，轻松买卖</h1>
                 <h4>环球车网——最大的一站式二手车交易广场</h4>
                 <!--
                 <a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl">Toggle Video</a> &nbsp; <a href="#one" class="btn btn-primary btn-xl page-scroll">Get Started</a>
               -->
-                <a href="#" class="btn btn-red btn-primary btn-xl" style="margin-right:20px">{{'buy' | translate | uppercase}}</a>&nbsp;<a href="#" class="btn btn-blue btn-primary btn-xl" style="margin-left:20px">{{'sell'| translate | uppercase}}</a>
+                <a href="#" class="btn btn-red btn-primary btn-xl" style="margin-right:20px">{{msg.buy | uppercase}}</a>&nbsp;<a href="#" class="btn btn-blue btn-primary btn-xl" style="margin-left:20px">{{msg.sell | uppercase}}</a>
             </div>
         </div>
         <!--
@@ -75,64 +80,13 @@
         </video>
         -->
     </header>
-    <section id="one">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                    <h2 class="margin-top-0">总有一款车，你与“她”的邂逅可遇而不可求</h2>
-                    <br>
-                    <p>
-                        有车的生活是幸福与甜蜜的，但追求心中的dream car的脚步或许永远不会停歇。还在为选车挑车头疼？不妨看看环球车网您推荐精选主题！从用车体验与生活的角度跟你一起了解名车，二手车。
-                    </p>
-                </div>
-            </div>
-        </div>
+    <section id="blog">
+      <div id="user-info"></div>
+      <div id="shares"></div>
+      <div id="blog-content"></div>
+      <div id="others"></div>
     </section>
-    <section id="two" class="bg-primary no-padding" ng-controller="IndexBlogCtrl">
-      <div id="blog-info" style="background:url({{blog.img}});background-repeat: no-repeat;background-size: cover;">
-        <h4>博文精选</h4>
-        <h2>{{blog.title}}</h2>
-        <p>{{blog.content}}</p>
-        <a href="{{blog.link}}" class="btn btn-yellow btn-primary btn-xl">详细阅读</a>
-      </div>
-      <div class="row" style="height:20px">
-        <div class="col-xs-6" style="background-color:#ff0038;height:20px"></div>
-        <div class="col-xs-6" style="background-color:#00cffa;height:20px"></div>
-      </div>
-    </section>
-    <section id="last" class="padding-70 text-center">
-      <div class="text-center"><h1>我们的承诺</h1></div>
-          <div class="container-fluid">
-              <div class="row no-gutter no-container">
-                  <div class="col-lg-3 col-sm-6" style="background:url(images/ele1.png);background-repeat:no-repeat;background-position: top center;">
-                    <img src="images/ele1.png">
-                    <div class="ele-no1">
-                      <h2 style="color:#ff0038">安心收购</h2>
-                      <p>选购汽车往往大家非常头疼的事。在环球车网，我们会为您提供全方位的汽车评估与报告，以便让您不需要过多的专业知识便可以购买到实惠可靠的车辆。</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6" style="background:url(images/ele2.png);background-repeat:no-repeat;background-position: top center;">
-                    <img src="images/ele2.png">
-                    <div class="ele-no2">
-                      <span class="glyphicon glyphicon-signal"></span> 全方位汽车报告<br/>
-                      <span class="glyphicon glyphicon-lock"></span> 30 天 /100 miles 质保
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6" style="background:url(images/ele3.png);background-repeat:no-repeat;background-position: top center;">
-                    <img src="images/ele3.png">
-                    <div class="ele-no3">
-                      <h2 style="color:#00cffa">轻松出售</h2>
-                      <p>为了节省您宝贵的时间，环球车网提供一站式的销售服务。我们的技术人员会亲自上门，对您的车辆进行全面评估，并根据我们庞大的价格系统进行合理的估价，帮您轻松卖车。</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6" style="background:url(images/ele4.png);background-repeat:no-repeat;background-position: top center;">
-                    <img src="images/ele4.png">
-                    <div class="ele-no4" style="padding:70px">
-                      <span class="glyphicon glyphicon-ok-circle"></span> 一站式卖车服务
-                    </div>
-                  </div>
-              </div>
-          </div>
+    <section id="recommendation">
     </section>
     <footer id="footer">
         <div class="container text-center">
@@ -164,7 +118,7 @@
     <div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-body" id="login-modal">
+        	<div class="modal-body ">
             <img src="images/logo/wwaf_logo.png"></img>
             <p>欢迎回来，环球车网。</p>
             <form method="post" action="" name="loginForm">
@@ -176,34 +130,9 @@
                 {{'login'  | translate}}
               </button>
             </form>
-            <div class="signup">忘了密码？没关系！通过<a href="">邮箱找回</a>  <div class="right"><a href="#" id="signup-toggle">{{'signup' | translate}}</a></div></div>
+            <div class="signup">忘了密码？没关系！通过<a href="">邮箱找回</a>  <div class="right"><a href="">{{'signup' | translate}}</a></div></div>
 
-            </div>
-
-
-
-            <div class="modal-body" id="signup-modal">
-            <img src="images/logo/wwaf_logo.png"></img>
-            <p>欢迎加入，环球车网。</p>
-            <form method="post" action="" name="loginForm">
-              <div class="forms-input">
-                <input style="border-top-right-radius: 5px;border-top-left-radius: 5px;" type="text" class="span3" name="pid" placeholder="{{'username' | translate}}">
-                <input style="width:50%;padding-left:0px;" type="text" class="span3 col-xs-6" name="lastname" placeholder="{{'lastname' | translate}}">
-                <input style="width:50%;padding-left:0px;" type="text" class="span3 col-xs-6" name="firstname" placeholder="{{'firstname' | translate}}">
-                <input type="text" class="span3" name="pwd" placeholder="{{'password' | translate}}">
-                <input type="text" class="span3" name="confirm" placeholder="{{'confirm' | translate}}">
-              </div>
-              <button type="submit" class="btn btn-primary btn-yellow btn-lg">
-                {{'signup'  | translate}}
-              </button>
-              <div class="checkbox" style="text-align:left">
-              <label><input type="checkbox" name="agree"/>我同意<a href="#">用户及个人隐私保密协议</a>。</label>
-              </div>
-            </form>
-            <div style="border:2px solid white;margin-top:-10px;margin-bottom:10px"></div>
-            <div class="signup">→已有账号？<a href="#" id="login-toggle" style="color:#00cffa">我要登陆</a></div>
-
-            </div>
+        	</div>
         </div>
         </div>
     </div>
@@ -212,9 +141,7 @@
     <script src="/libs/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/libs/jquery-easing/jquery.easing.min.js"></script>
     <script src="/libs/wow/dist/wow.min.js"></script>
-    <script src="/libs/jquery-ui/jquery-ui.min.js"></script>
     <script src="/javascripts/scripts.js"></script>
-    <script src="/javascripts/index-scripts.js"></script>
     <!-- angular.js -->
     <script src="/libs/angular/angular.min.js"></script>
     <script src="/libs/angular-translate/angular-translate.min.js"></script>
@@ -223,7 +150,6 @@
     <!-- controllers -->
     <script src="/javascripts/controller/ctrl.js"></script>
     <script src="/javascripts/controller/lang-ctrl.js"></script>
-    <script src="/javascripts/controller/index-blog.js"></script>
     <!-- services -->
     <script src="/javascripts/services/url-factory.js"></script>
     <script src="/javascripts/services/api-factory.js"></script>

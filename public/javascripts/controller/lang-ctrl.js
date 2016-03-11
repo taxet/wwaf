@@ -1,3 +1,5 @@
+(function() {
+  'use script'
 var app = angular.module('WwafApp');
 app.controller('LangCtrl', ['$scope', '$translate', 'localStorageService', function($scope, $translate, localStorageService){
     $scope.lang = localStorageService.get('lang') || "cn";
@@ -21,5 +23,5 @@ app.controller('LangCtrl', ['$scope', '$translate', 'localStorageService', funct
       }
     }
 
-    $scope.msg = $translate.use($scope.lang);
 }]);
+})();
