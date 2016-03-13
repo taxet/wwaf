@@ -43,13 +43,13 @@
                         <a>{{'index' | translate}}</a>
                     </li>
                     <li>
-                        <a href="#">{{'buy' | translate}}</a>
+                        <a href="{{urls.buy}}">{{'buy' | translate}}</a>
                     </li>
                     <li>
-                        <a href="#">{{'sell' | translate}}</a>
+                        <a href="{{urls.sell}}">{{'sell' | translate}}</a>
                     </li>
                     <li>
-                        <a href="#">{{'help' | translate}}</a>
+                        <a href="{{urls.help}}">{{'help' | translate}}</a>
                     </li>
                     <li>
                         <a  data-toggle="modal" title="A free Bootstrap video landing theme" href="#aboutModal">{{'login' | translate}}</a>
@@ -167,7 +167,7 @@
             <div class="modal-body" id="login-modal">
             <img src="images/logo/wwaf_logo.png"></img>
             <p>欢迎回来，环球车网。</p>
-            <form method="post" action="" name="loginForm">
+            <form method="post" action="{{urls.login}}" name="loginForm">
               <div class="forms-input">
                 <input style="border-top-right-radius: 5px;border-top-left-radius: 5px;" type="text" class="span3" name="pid" placeholder="{{'username' | translate}}">
                 <input type="text" class="span3" name="pwd" placeholder="{{'password' | translate}}">
@@ -185,7 +185,7 @@
             <div class="modal-body" id="signup-modal">
             <img src="images/logo/wwaf_logo.png"></img>
             <p>欢迎加入，环球车网。</p>
-            <form method="post" action="" name="loginForm">
+            <form method="post" action="{{urls.signup}}" name="loginForm">
               <div class="forms-input">
                 <input style="border-top-right-radius: 5px;border-top-left-radius: 5px;" type="text" class="span3" name="pid" placeholder="{{'username' | translate}}">
                 <input style="width:50%;padding-left:0px;" type="text" class="span3 col-xs-6" name="lastname" placeholder="{{'lastname' | translate}}">

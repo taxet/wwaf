@@ -10,19 +10,19 @@
   });
 
   $(".ele-no1").hover(function(){
-    $('.ele-no1 > h2').hide();
-    $('.ele-no1 > p').show();
+    $('.ele-no1 > h2').slideUp();
+    $('.ele-no1 > p').show('up');
   }, function(){
     $('.ele-no1 > p').hide();
-    $('.ele-no1 > h2').show();
+    $('.ele-no1 > h2').slideDown();
   });
 
   $(".ele-no3").hover(function(){
-    $('.ele-no3 > h2').hide();
+    $('.ele-no3 > h2').slideUp();
     $('.ele-no3 > p').show();
   }, function(){
     $('.ele-no3 > p').hide();
-    $('.ele-no3 > h2').show();
+    $('.ele-no3 > h2').slideDown();
   });
 
   $("#signup-toggle").click(function(){

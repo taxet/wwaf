@@ -1,7 +1,8 @@
 (function() {
   'use script'
 var app = angular.module('WwafApp');
-app.controller('LangCtrl', ['$scope', '$translate', 'localStorageService', function($scope, $translate, localStorageService){
+app.controller('LangCtrl', ['$scope', '$translate', 'localStorageService', 'urlFactory', 
+  function($scope, $translate, localStorageService, urlFactory){
     $scope.lang = localStorageService.get('lang') || "cn";
     $scope.changeLang = function(lang) {
         if (lang === "cn") {
@@ -22,6 +23,8 @@ app.controller('LangCtrl', ['$scope', '$translate', 'localStorageService', funct
         $scope.changeLang("en");
       }
     }
+
+    $scope.urls = urlFactory;
 
 }]);
 })();
