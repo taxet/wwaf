@@ -2,7 +2,7 @@
     "index": "首页",
     "buy": "我要买车",
     "sell": "我要卖车",
-    "help": "帮助中心",
+    "help": "环球帮助",
     "login": "登录",
     "signup": "注册",
     "language": "语言",
@@ -18,5 +18,6 @@
     "confirm": "确认",
     "lastname": "姓",
     "firstname": "名",
-    "another": "En"
+    "another": "En",
+    "friends": "友情链接"
 }

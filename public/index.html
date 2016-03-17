@@ -38,10 +38,7 @@
                     <a ng-click="toggleLang()" href="" >{{'another' | translate}}</a>
                 </li>
             </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
-                        <a>{{'index' | translate}}</a>
-                    </li>
+                <ul class="nav navbar-nav navbar-right normal-font">
                     <li>
                         <a href="{{urls.buy}}">{{'buy' | translate}}</a>
                     </li>
@@ -49,24 +46,28 @@
                         <a href="{{urls.sell}}">{{'sell' | translate}}</a>
                     </li>
                     <li>
-                        <a href="{{urls.help}}">{{'help' | translate}}</a>
+                        <a  data-toggle="modal" title="A free Bootstrap video landing theme" href="#loginModal">{{'login' | translate}}</a>
                     </li>
                     <li>
-                        <a  data-toggle="modal" title="A free Bootstrap video landing theme" href="#aboutModal">{{'login' | translate}}</a>
+                        <a  data-toggle="modal" title="A free Bootstrap video landing theme" href="#signupModal">{{'signup' | translate}}</a>
+                    </li>
+                    <li>
+                        <a href="{{urls.help}}">{{'help' | translate}}</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <header id="first" style="background-image: url('../images/title-image.png');">
+    <header id="first" style="background-image: url('{{urls.titleImg}}');">
+    <div class="wrapper">
         <div class="header-content">
             <div class="inner">
-                <h1 class="cursive iniinvisible">精品汽车，轻松买卖</h1>
-                <h4>环球车网——最大的一站式二手车交易广场</h4>
+                <h1 class="cursive iniinvisible thin-font">精品汽车，轻松买卖</h1>
+                <h4 class="thin-font">环球车网——最大的一站式二手车交易广场</h4>
                 <!--
                 <a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl">Toggle Video</a> &nbsp; <a href="#one" class="btn btn-primary btn-xl page-scroll">Get Started</a>
               -->
-                <a href="#" class="btn btn-red btn-primary btn-xl" style="margin-right:20px">{{'buy' | translate | uppercase}}</a>&nbsp;<a href="#" class="btn btn-blue btn-primary btn-xl" style="margin-left:20px">{{'sell'| translate | uppercase}}</a>
+                <a href="{{urls.buy}}" class="btn btn-red btn-primary btn-xl medium-font" style="margin-right:20px">{{'buy' | translate | uppercase}}</a>&nbsp;<a href="{{urls.sell}}" class="btn btn-blue btn-primary btn-xl medium-font" style="margin-left:20px">{{'sell'| translate | uppercase}}</a>
             </div>
         </div>
         <!--
@@ -74,14 +75,15 @@
             <source src="https://s3-us-west-2.amazonaws.com/coverr/mp4/Traffic-blurred2.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
         </video>
         -->
+    </div>
     </header>
     <section id="one">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                    <h2 class="margin-top-0">总有一款车，你与“她”的邂逅可遇而不可求</h2>
+                <div class="text-center">
+                    <h2 class="margin-top-0 thin-font">总有一款车，你与“她”的邂逅可遇而不可求</h2>
                     <br>
-                    <p>
+                    <p class="col-md-6 col-md-offset-3 normal-font">
                         有车的生活是幸福与甜蜜的，但追求心中的dream car的脚步或许永远不会停歇。还在为选车挑车头疼？不妨看看环球车网您推荐精选主题！从用车体验与生活的角度跟你一起了解名车，二手车。
                     </p>
                 </div>
@@ -90,10 +92,10 @@
     </section>
     <section id="two" class="bg-primary no-padding" ng-controller="IndexBlogCtrl">
       <div id="blog-info" style="background:url({{blog.img}});background-repeat: no-repeat;background-size: cover;">
-        <h4>博文精选</h4>
-        <h2>{{blog.title}}</h2>
-        <p>{{blog.content}}</p>
-        <a href="{{blog.link}}" class="btn btn-yellow btn-primary btn-xl">详细阅读</a>
+        <h4 class="medium-font">博文精选</h4>
+        <h2 class="normal-font">{{blog.title}}</h2>
+        <p class="normal-font">{{blog.content}}</p>
+        <a href="{{blog.link}}" class="btn btn-yellow btn-primary btn-xl medium-font">详细阅读</a>
       </div>
       <div class="row" style="height:20px">
         <div class="col-xs-6" style="background-color:#ff0038;height:20px"></div>
@@ -101,33 +103,33 @@
       </div>
     </section>
     <section id="last" class="padding-70 text-center">
-      <div class="text-center"><h1>我们的承诺</h1></div>
+      <div class="text-center"><h1 class="normal-font">我们的承诺</h1></div>
           <div class="container-fluid">
               <div class="row no-gutter no-container">
                   <div class="col-lg-3 col-sm-6" style="background:url(images/ele1.png);background-repeat:no-repeat;background-position: top center;">
                     <img src="images/ele1.png">
                     <div class="ele-no1">
-                      <h2 style="color:#ff0038">安心收购</h2>
-                      <p>选购汽车往往大家非常头疼的事。在环球车网，我们会为您提供全方位的汽车评估与报告，以便让您不需要过多的专业知识便可以购买到实惠可靠的车辆。</p>
+                      <h2 style="color:#ff0038" class="normal-font">安心收购</h2>
+                      <p class="light-font">选购汽车往往大家非常头疼的事。在环球车网，我们会为您提供全方位的汽车评估与报告，以便让您不需要过多的专业知识便可以购买到实惠可靠的车辆。</p>
                     </div>
                   </div>
                   <div class="col-lg-3 col-sm-6" style="background:url(images/ele2.png);background-repeat:no-repeat;background-position: top center;">
                     <img src="images/ele2.png">
-                    <div class="ele-no2">
+                    <div class="ele-no2 normal-font">
                       <span class="glyphicon glyphicon-signal"></span> 全方位汽车报告<br/>
                       <span class="glyphicon glyphicon-lock"></span> 30 天 /100 miles 质保
                     </div>
                   </div>
                   <div class="col-lg-3 col-sm-6" style="background:url(images/ele3.png);background-repeat:no-repeat;background-position: top center;">
                     <img src="images/ele3.png">
-                    <div class="ele-no3">
-                      <h2 style="color:#00cffa">轻松出售</h2>
-                      <p>为了节省您宝贵的时间，环球车网提供一站式的销售服务。我们的技术人员会亲自上门，对您的车辆进行全面评估，并根据我们庞大的价格系统进行合理的估价，帮您轻松卖车。</p>
+                    <div class="ele-no3 normal-font">
+                      <h2 style="color:#00cffa" class="normal-font">轻松出售</h2>
+                      <p class="light-font">为了节省您宝贵的时间，环球车网提供一站式的销售服务。我们的技术人员会亲自上门，对您的车辆进行全面评估，并根据我们庞大的价格系统进行合理的估价，帮您轻松卖车。</p>
                     </div>
                   </div>
                   <div class="col-lg-3 col-sm-6" style="background:url(images/ele4.png);background-repeat:no-repeat;background-position: top center;">
                     <img src="images/ele4.png">
-                    <div class="ele-no4" style="padding:70px">
+                    <div class="ele-no4">
                       <span class="glyphicon glyphicon-ok-circle"></span> 一站式卖车服务
                     </div>
                   </div>
@@ -135,56 +137,72 @@
           </div>
     </section>
     <footer id="footer">
-        <div class="container text-center">
+        <div class="container text-center normal-font">
             <div class="row">
-                <div class="col-xs-12 col-sm-4 column">
-                    <h4>{{'aboutus'  | translate}}</h4>
+                <div class="col-xs-12 col-sm-3 column" style="text-align:left">
+                    <h4><img src="/images/logo/LOGOandtext.png" style="width:190px"></h4>
+                    <p>我们致力于为个人用户提供诚信、专业、便捷、有保障的优质二手车交易服务平台。
+环球车网@2016</p>
+                </div>
+                <div class="col-xs-12 col-sm-3 column">
+                    <h4 class="medium-font">{{'aboutus'  | translate}}</h4>
                     <ul class="list-unstyled">
                         <li><a href="">{{'ourteam'  | translate}}</a></li>
                         <li><a href="">{{'ourbel'  | translate}}</a></li>
+                        <li><a href="">{{'friends'  | translate}}</a></li>
                     </ul>
                 </div>
-                <div class="col-xs-12 col-sm-4 column">
-                    <h4>{{'contactus' | translate}}</h4>
+                <div class="col-xs-12 col-sm-3 column">
+                    <h4 class="medium-font">{{'contactus' | translate}}</h4>
                     <ul class="list-unstyled">
                         <li><span class="glyphicon glyphicon-earphone"></span> (858)345-0797</li>
                         <li><span class="glyphicon glyphicon-envelope"></span><a href="mailto:wwaf@gmail.com"> wwaf@gmail.com</a></li>
+                        <li><span class="glyphicon glyphicon-calendar"></span> {{'mtf' | translate}}</li>
+                        <li><span class="glyphicon glyphicon-time"></span> 10:00AM - 6：00PM</li>
                     </ul>
                 </div>
-                <div class="col-xs-12 col-sm-4 column">
-                    <h4>{{'opentime' | translate}}</h4>
-                    <ul class="list-unstyled">
-                        <li>{{'mtf' | translate}}</li>
-                        <li>10:00AM - 6：00PM</li>
-                    </ul>
+                <div class="col-xs-12 col-sm-3 column no-padding row" >
+                    <div class="col-xs-6 column no-padding">
+                    <img src="/images/wx.jpg" style="width:100%">
+                    </div>
+                    <div class="col-xs-5 col-xs-offset-1 column no-padding" style="text-align:left;">
+                        <h4 class="medium-font">环球社群</h4>
+                        <p>第一时间了解新车信息、旅游资讯、汽车服务、抽奖活动信息，请关注环球车网微信公众号。</p>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
-    <div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div id="loginModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body" id="login-modal">
             <img src="images/logo/wwaf_logo.png"></img>
-            <p>欢迎回来，环球车网。</p>
+            <p class="normal-font">欢迎回来，环球车网。</p>
             <form method="post" action="{{urls.login}}" name="loginForm">
               <div class="forms-input">
                 <input style="border-top-right-radius: 5px;border-top-left-radius: 5px;" type="text" class="span3" name="pid" placeholder="{{'username' | translate}}">
                 <input type="text" class="span3" name="pwd" placeholder="{{'password' | translate}}">
               </div>
-              <button type="submit" class="btn btn-primary btn-yellow btn-lg">
+              <button type="submit" class="btn btn-primary btn-yellow btn-lg medium-font">
                 {{'login'  | translate}}
               </button>
             </form>
-            <div class="signup">忘了密码？没关系！通过<a href="">邮箱找回</a>  <div class="right"><a href="#" id="signup-toggle">{{'signup' | translate}}</a></div></div>
+            <div class="signup normal-font">忘了密码？没关系！通过<a href="">邮箱找回</a>  <div class="right"><a href="#" id="signup-toggle" data-toggle="modal" data-target="#signupModal"  data-dismiss="modal">{{'signup' | translate}}</a></div></div>
 
             </div>
+        </div>
+        </div>
+    </div>
 
 
 
+    <div id="signupModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
             <div class="modal-body" id="signup-modal">
             <img src="images/logo/wwaf_logo.png"></img>
-            <p>欢迎加入，环球车网。</p>
+            <p class="normal-font">欢迎加入，环球车网。</p>
             <form method="post" action="{{urls.signup}}" name="loginForm">
               <div class="forms-input">
                 <input style="border-top-right-radius: 5px;border-top-left-radius: 5px;" type="text" class="span3" name="pid" placeholder="{{'username' | translate}}">
@@ -193,15 +211,15 @@
                 <input type="text" class="span3" name="pwd" placeholder="{{'password' | translate}}">
                 <input type="text" class="span3" name="confirm" placeholder="{{'confirm' | translate}}">
               </div>
-              <button type="submit" class="btn btn-primary btn-yellow btn-lg">
+              <button type="submit" class="btn btn-primary btn-yellow btn-lg medium-font">
                 {{'signup'  | translate}}
               </button>
               <div class="checkbox" style="text-align:left">
-              <label><input type="checkbox" name="agree"/>我同意<a href="#">用户及个人隐私保密协议</a>。</label>
+              <label class="normal-font"><input type="checkbox" name="agree"/>我同意<a href="#">用户及个人隐私保密协议</a>。</label>
               </div>
             </form>
-            <div style="border:2px solid white;margin-top:-10px;margin-bottom:10px"></div>
-            <div class="signup">→已有账号？<a href="#" id="login-toggle" style="color:#00cffa">我要登陆</a></div>
+            <div style="border:1px solid white;margin-top:-10px;margin-bottom:10px"></div>
+            <div class="signup normal-font">→已有账号？<a href="#" id="login-toggle" style="color:#00cffa" data-toggle="modal" data-target="#loginModal"  data-dismiss="modal">我要登陆</a></div>
 
             </div>
         </div>
@@ -227,5 +245,8 @@
     <!-- services -->
     <script src="/javascripts/services/url-factory.js"></script>
     <script src="/javascripts/services/api-factory.js"></script>
+    <!-- typekit -->
+    <script src="https://use.typekit.net/exe0mze.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </body>
 </html>

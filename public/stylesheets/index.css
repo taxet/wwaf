@@ -5,14 +5,11 @@ http://www.bootstrapzero.com
 
 */
 
-@import url(fonts.css);
-
 #blog-info{
   margin-right: 0;
   padding-right: 8%;
   padding-left: 43%;
   text-align: right;
-  font-family: fLight;
   min-height: 470px;
   padding-top: 120px;
   padding-bottom: 20px;
@@ -37,7 +34,6 @@ http://www.bootstrapzero.com
 
 #one {
   color: black;
-  font-family: 'fLight';
 }
 
 #one h2{
@@ -51,7 +47,6 @@ http://www.bootstrapzero.com
 #last h1{
   margin-bottom: 70px;
   font-size: 30px;
-  font-family: "fBold";
   color: black;
 }
 
@@ -65,24 +60,21 @@ http://www.bootstrapzero.com
   margin-right: auto;
 }
 .ele-no1, .ele-no3{
-  font-family:"fLight";
   font-size: 12px;
   color: black;
   max-width: 240px;
   border-top: 1px solid black;
 }
 .ele-no1 p, .ele-no3 p{
-  font-family:"fLight";
   font-size: 12px;
   color: black;
 }
 .ele-no1 h2, .ele-no3 h2{
-  font-family:"fRegular";
   font-size: 24px;
+  margin-top:0;
 }
 
 .ele-no2, .ele-no4{
-  font-family:"fRegular";
   font-size: 14px;
   color: white;
 }

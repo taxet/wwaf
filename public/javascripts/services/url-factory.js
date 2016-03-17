@@ -6,7 +6,10 @@ app.factory('urlFactory', function() {
   	"sell": "/#/sell",
   	"help": "/#/help",
   	"login": "/#/login",
-  	"signup": "/#/signup"
+  	"signup": "/#/signup",
+  	"policy": "/#/policy",
+
+  	"titleImg": "/images/title.jpg"
   }
   return obj;
 })
