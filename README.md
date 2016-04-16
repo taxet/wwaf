@@ -7,7 +7,7 @@ Front page template of wwaf.
 >- npm install -g express-generator  
 - npm install -g bower  
 
-3.进入目录，输入:  
+3.进入工程目录（/wwaf/)，输入:  
 >- npm install    
 - bower install  
 

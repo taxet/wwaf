@@ -1,0 +1,110 @@
+[
+    {
+        "name": "2012 jb xl 5.0L",
+        "price": "24500",
+        "pic": "/images/tmp/IMG_3496bfree.jpg",
+        "color": "red",
+        "miles": 1000,
+        "gearbox":"A",
+        "year": 2014,
+        "type":"suv",
+        "address":"San Diego, CA",
+        "rate":3.7
+    },
+    {
+        "name": "2012 jb xl 5.0L",
+        "price": "24500",
+        "pic": "/images/tmp/IMG_3496bfree.jpg",
+        "color": "red",
+        "miles": 1000,
+        "gearbox":"A",
+        "year": 2014,
+        "type":"suv",
+        "address":"Dallas, TX",
+        "rate":3.7
+    },
+    {
+        "name": "2012 qy KD DXL",
+        "price": "23700",
+        "pic": "/images/tmp/IMG_3496bfree.jpg",
+        "color": "red",
+        "miles": 1000,
+        "gearbox":"A",
+        "year": 2014,
+        "type":"suv",
+        "address":"New York, NY",
+        "rate":3.7
+    },
+    {
+        "name": "2012 jb xl 5.0L",
+        "price": "24500",
+        "pic": "/images/tmp/IMG_3496bfree.jpg",
+        "color": "red",
+        "miles": 1000,
+        "gearbox":"A",
+        "year": 2014,
+        "type":"suv",
+        "address":"",
+        "rate":3.7
+    },
+    {
+        "name": "2012 jb xl 5.0L",
+        "price": "24500",
+        "pic": "/images/tmp/IMG_3496bfree.jpg",
+        "color": "red",
+        "miles": 1000,
+        "gearbox":"A",
+        "year": 2014,
+        "type":"suv",
+        "address":"",
+        "rate":3.7
+    },
+    {
+        "name": "2012 qy KD DXL",
+        "price": "23700",
+        "pic": "/images/tmp/IMG_3496bfree.jpg",
+        "color": "red",
+        "miles": 1000,
+        "gearbox":"A",
+        "year": 2014,
+        "type":"suv",
+        "address":"",
+        "rate":3.7
+    },
+    {
+        "name": "2012 jb xl 5.0L",
+        "price": "24500",
+        "pic": "/images/tmp/IMG_3496bfree.jpg",
+        "color": "red",
+        "miles": 1000,
+        "gearbox":"A",
+        "year": 2014,
+        "type":"suv",
+        "address":"",
+        "rate":3.7
+    },
+    {
+        "name": "2012 jb xl 5.0L",
+        "price": "24500",
+        "pic": "/images/tmp/IMG_3496bfree.jpg",
+        "color": "red",
+        "miles": 1000,
+        "gearbox":"A",
+        "year": 2014,
+        "type":"suv",
+        "address":"",
+        "rate":3.7
+    },
+    {
+        "name": "2012 qy KD DXL",
+        "price": "23700",
+        "pic": "/images/tmp/IMG_3496bfree.jpg",
+        "color": "red",
+        "miles": 1000,
+        "gearbox":"A",
+        "year": 2014,
+        "type":"suv",
+        "address":"",
+        "rate":3.7
+    }
+]

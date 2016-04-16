@@ -20,17 +20,17 @@ body {
 .normal-font{
   font-family: "source-han-sans-simplified-c",sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 300 !important;
 }
 .thin-font{
   font-family: "source-han-sans-simplified-c",sans-serif;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 100 !important;
 }
 .medium-font{
   font-family: "source-han-sans-simplified-c",sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 500 !important;
 }
 
 hr {
@@ -193,8 +193,19 @@ footer .container{
   max-width: 1080px;
 }
 
+@media(max-width: 768px){
+  footer{
+    display: none;
+  }
+}
+
 .no-padding {
     padding: 0;
+}
+
+.no-padding-lr{
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .padding-70{
@@ -275,6 +286,11 @@ footer .container{
     .navbar-header > .navbar-brand {
         color: rgba(255,255,255,0.7);
         padding: 10px 19px 5px 19px;
+    }
+
+    .navbar > .container-fluid{
+      margin-left: 7%;
+      margin-right: 7%;
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
@@ -652,6 +668,12 @@ fieldset[disabled] .btn-default.active {
 .btn.btn-primary.btn-yellow{
   background-color: rgb(255, 206, 56);
 }
+.btn.btn-primary.btn-transparent {
+  border:1px solid #efefef;
+}
+.btn-transparent:hover{
+  background-color: #00cffa;
+}
 
 .btn-xl {
     padding: 15px 30px;
@@ -682,4 +704,41 @@ img::-moz-selection {
 
 input[type=text]:focus {
   border-left: 5px solid #00cffa;
+}
+
+.width100{
+  width: 100%;
+}
+
+.left-align{
+  text-align: left;
+}
+.right-align{
+  text-align: right;
+}
+.left-float{
+  float: left;
+}
+.right-float{
+  float: right;
+}
+.clear-float{
+  clear: both;
+}
+
+.vertical-middle{
+  position:relative;
+  top: 50%;
+}
+
+.transparent{
+  background-color: rgba(0,0,0,0) !important;
+}
+
+.child-div > div:not(:last-child) {
+  border-right:1px solid white;
+}
+
+.circle{
+  border-radius: 50%;
 }

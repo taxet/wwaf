@@ -1,0 +1,247 @@
+@media(min-width: 768px){
+	header{
+		max-height: 400px !important;
+		min-height: 0px;
+		/*height: 31;*/
+		padding-top: 60px;
+		padding-left:11%;
+		padding-right: 11%;
+		padding-bottom: 16px;
+		z-index: 1024;
+	}
+
+	header .wrapper{
+		position: relative;
+		background-color: transparent;
+	}
+	header .wrapper > div{
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+}
+
+.self-div > div{
+	float:left;
+}
+.self-div > div > input[type=search]{
+	width: 100%;
+	background-color: transparent;
+	border-top-width: 0;
+	border-left-width: 0;
+	border-right-width: 0;
+}
+
+#search-bar *{
+	height: 100%;
+}
+
+.self-div > div:nth-child(1) {
+	width: 26%;
+}
+.self-div > div:nth-child(2) {
+	width:42%;
+}
+.self-div > div:nth-child(3) {
+	width:32%;
+}
+
+#search-info{
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+#search-info > div{
+	height: 36px;
+	font-size: 12px;
+	display:flex;
+	align-items: center;
+}
+#search-info .btn{
+	height: 100%;
+	padding-left: 5px;
+	padding-right: 5px;
+	height: 17px;
+	width: auto;
+	margin-left: 3px;
+	margin-right: 3px;
+	padding-top: 0;
+	font-size: 12px;
+}
+#ctr-panel {
+	width: 38%;
+	background-color: rgba(239, 239, 239, 0.3);
+	margin-left: 0;
+	margin-right: 0;
+}
+#ctr-panel > div{
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+#ctr-panel i{
+	padding-left:5px;
+	padding-right:5px;
+}
+#search-panel {
+	background-color:rgba(239, 239, 239, 0.3);
+	height: 200px;
+	padding: 5px 0 5px 0;
+}
+#search-panel > div{
+	height: 100%;
+}
+#search-panel > div > *{
+	margin: 5px 20px 5px 20px;
+}
+#search-panel > div > h1{
+	font-size: 14px;
+  font-family: "source-han-sans-simplified-c",sans-serif;
+  font-style: normal;
+  font-weight: 500 !important;
+}
+
+#cars{
+	border-top:10px solid #ff0038;
+	border-bottom:10px solid #ffce38;
+}
+
+#cars .container{
+	width: 78%;
+}
+
+#cars .ele {
+	height: 16vw;
+	padding-left: 10px;
+	padding-right: 10px;
+    /*
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    */
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-clip:content-box;
+    background-color: black;
+    position:relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#cars .ele > div{
+	/*height: 26px;*/
+	font-size:14px;
+	color: #efefef;
+	position:absolute;
+	bottom: 0px;
+	left: 10px;
+	right: 10px;
+	margin: 0;
+	background: linear-gradient(to bottom, rgba(0,0,0, 0.0), rgba(0, 0, 0, 0.6)); 
+	padding: 10px 10px 0 10px;
+}
+
+#cars .ele > div > div:first-child {
+	height: 28px;
+}
+#cars .ele > div > div:first-child > p {
+	font-size: 14px;
+	margin: 0;
+}
+#cars .ele > div > .bottom-slide {
+	border-top:1px solid white;
+	margin: 0;
+	height: 40px;
+}
+#cars .ele > div > .bottom-slide > div {
+	padding: 0;
+	font-size: 12px;
+}
+
+#blogs{
+	background-color: #2d3033;
+}
+
+.ad{
+	border: #efefef solid 3px;
+	margin: 20px 0px 20px 0px;
+	padding-bottom: 25px;
+	padding-top: 25px;
+	height: 140px;
+}
+
+.ad > div > img{
+	height: 90px;
+}
+
+.ad > div > h2 {
+	border-left: #00cffa solid 3px;
+	font-size: 12px; 
+	color: #ff0038;
+	padding-left: 10px;
+}
+
+.ad > div > p {
+	color: #727077;
+	font-size: 30px;
+}
+
+.ad > div > .btn {
+	margin-top: 20px;
+	border-radius: 15px;
+	padding-top: 20px;
+}
+section .container{
+	margin-left: 11%;
+	margin-right: 11%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 78%;
+}
+
+#blogs > .container > div{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#blogs > .container img{
+	max-height: 176px;
+	width: 100%;
+	margin-left:auto;
+	margin-right: auto;
+	object-fit: cover;
+}
+#blogs > .container h4{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-left-style: solid;
+	border-left-width: 5px;
+	padding-left: 2px;
+	font-size: 12px;
+}
+#blogs > .container h2{
+	font-size: 18px;
+}
+#blogs > .container > .even > h4{
+	border-color: #ff0038;
+	color: #ff0038;
+}
+#blogs > .container > .odd > h4{
+	border-color: #00cffa;
+	color: #00cffa;
+}
+#blogs > .container h2{
+	max-height: 176px;
+	width: 100%;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+#blogs {
+	height: 240px;
+	padding: 50px 150px 50px 150px;
+}
+#blogs > .ad{
+	margin: 0px;
+	background-color: white;
+}

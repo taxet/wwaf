@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html ng-app="WwafApp">
+  <head>
+    <title>环球车网</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    name="viewport">
+    <meta content="环球车网" name="keywords">
+    <meta content="环球车网" name="description">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="msvalidate.01" content="F9B21A8F267C6D1ED674696961603921">
+    <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css" />
+    <link res="stylesheet" href="/libs/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="/libs/Ionicons/css/ionicons.min.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/stylesheets/overall.css" />
+    <link rel="stylesheet" href="/stylesheets/buy.css" />
+  </head>
+  <body ng-controller="LangCtrl">
+    <nav id="topNav" class="navbar navbar-default navbar-fixed-top transparent">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                  <a class="navbar-brand" href="/">
+                  <!--
+                    <img alt="Brand" src="/images/logo/wwaf_logo.png">
+                    <img alt="Brand" src="/images/logo/wwaf_logo2.png">
+                    -->
+                    <img alt="Brand" src="/images/logo/LOGOandtext1.png">
+                  </a>
+            </div>
+            <div class="navbar-collapse collapse" id="bs-navbar">
+            <!-- language toggle
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a ng-click="toggleLang()" href="" >{{'another' | translate}}</a>
+                </li>
+            </ul>
+            -->
+                <ul class="nav navbar-nav navbar-right normal-font">
+                    <li>
+                        <a href="{{urls.buy}}">{{'buy' | translate}}</a>
+                    </li>
+                    <li>
+                        <a href="{{urls.sell}}">{{'sell' | translate}}</a>
+                    </li>
+                    <!--
+                    <li>
+                        <a  data-toggle="modal" title="A free Bootstrap video landing theme" href="#loginModal">{{'login' | translate}}</a>
+                    </li>
+                    <li>
+                        <a  data-toggle="modal" title="A free Bootstrap video landing theme" href="#signupModal">{{'signup' | translate}}</a>
+                    </li>
+                    -->
+                    <li>
+                        <a href="{{urls.help}}">{{'help' | translate}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="first" class="affix" style="background-image: url('/images/Images/street-car-vehicle-blur.jpg');">
+    <div class="wrapper">
+        <div id="search-bar" class="row self-div thin-font" style="height: 35px">
+            <div class="right-align" style="padding-right:17px">
+                <img src="/images/icons/search-car.jpg">
+            </div>
+            <div style="padding-right:14px"><input type="search" placeholder="我想找一台……"></div>
+            <div class="left-align"><a href="#" class="btn btn-primary btn-transparent thin-font" style="width:105px">搜索</a></div>
+        </div>
+        <div id="search-info" class="row thin-font">
+            <div class="left-float"><span>为您找到<span style="color:#00cffa">X</span>辆车
+                | <span><div class="btn btn-primary btn-transparent thin-font">btn1</div><div class="btn btn-primary btn-transparent thin-font">btn2</div></span></span>
+            </div>
+            <div class="right-float row child-div normal-font" id="ctr-panel">
+                <div class="col-xs-3">价格<i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                <div class="col-xs-3">里程<i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                <div class="col-xs-3">车龄<i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                <div class="col-xs-3" style="font-size:25px"><i class="fa fa-angle-double-up"></i><i class="fa fa-angle-double-down"></i></div>
+            </div>
+        </div>
+        <div id="search-panel" class="row self-div child-div left-align">
+            <div>
+                <h1>颜色</h1>
+                <div>
+                    <div class="circle" style="background-color: red; height: 30px; width: 30px"></div>
+                </div>
+                <h1>变速器</h1>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <a href="#" class="btn btn-primary btn-transparent">自动档</a>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="#" class="btn btn-primary btn-transparent">手动档</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1>价格</h1>
+                <div><input type="range"></div>
+                <h1>里程</h1>
+                <div><input type="range"></div>
+                <h1>年份</h1>
+                <div class="row">
+                    <div class="circle col-xs-1 no-padding" style="border:1px solid white;height:30px">2012</div>
+                </div>
+            </div>
+            <div>
+                <h1>车型</h1>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <section id="cars">
+        <div class="container row no-padding" ng-controller="carsCtrl">
+            <!--
+            <div ng-repeat="car in cars" class="col-xs-4 ele" style="background-image:url({{car.pic}})">
+                <div>
+                    <p class="left-float left-algin">{{car.name}}</p> <p class="right-float right-align">{{car.price}}</p>
+                    <div class="clear-float invisible"></div>
+                </div>
+            </div>
+            -->
+            <div class="invisible" ng-repeat-start="car in cars"></div>
+            <div class="col-xs-4 ele" style="background-image:url({{car.pic}})" ng-mouseenter="entered=true" ng-mouseleave="entered=false">
+                <div>
+                    <div>
+                    <p class="left-float left-algin">{{car.name}}</p> <p class="right-float right-align">${{car.price}}<span class="">| <i style="color:red" class="fa fa-heart"></i></span></p>
+                    </div>
+                    <div class="clear-float bottom-slide row" ng-show="entered">
+                        <div class="col-xs-8 left-align">
+                            <div><i class="fa fa-car"></i> {{car.type}}   <span class="glyphicon glyphicon-road"></span> {{car.miles | number:0}} miles</div>
+                            <div><span class="glyphicon glyphicon-map-marker"></span> {{car.address}}</div>
+                        </div>
+                        <div class="col-xs-4 right-align">
+                            {{car.rate}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div ng-if="$index % 9 === 8" class="col-xs-12 ad row thin-font">
+                <div class="col-xs-2">
+                    <img src="/images/icons/1455254645_lightbulb-2.png">
+                </div>
+                <div class="col-xs-7 left-align thin-font">
+                    <h2>不会选车？为你推荐</h2>
+                    <p class="normal-font">留学生新移民购车驾车指南</p>
+                </div>
+                <div class="col-xs-3">
+                    <a href="#" class="btn btn-primary btn-yellow medium-font">详细阅读</a>
+                </div>
+            </div>
+            <div class="invisible" ng-repeat-end></div>
+        </div>
+    </section>
+
+    <section id="blogs" class="no-padding"  style="background-image:url(/images/icons/bg-gear.jpg);background-size:cover;background-position:center">
+        <!--
+        <div class="container row no-padding-lr">
+            <div class="col-xs-4 odd no-padding-lr left-align medium-font">
+                <img src="/images/tmp/IMG_3496bfree.jpg">
+                <h4>汽车养护</h4>
+                <h2>美国车险指南</h2>
+            </div>
+            <div class="col-xs-4 even no-padding-lr left-align medium-font">
+                <img src="/images/tmp/blog-header.jpg">
+                <h4>汽车养护</h4>
+                <h2>我们在创业的路上努力着，致做最好的华人车行</h2>
+            </div>
+            <div class="col-xs-4 odd no-padding-lr left-align medium-font">
+                <img src="/images/tmp/city-cars-traffic-lights.jpeg">
+                <h4>汽车养护</h4>
+                <h2>如何让爱车不受伤害</h2>
+            </div>
+        </div>
+        -->
+            <div class="ad row thin-font">
+                <div class="col-xs-2">
+                    <img src="/images/icons/search-car.jpg">
+                </div>
+                <div class="col-xs-7 left-align thin-font">
+                    <h2>找不到喜欢的车子？</h2>
+                    <p class="normal-font">告诉我们你的喜好，环球帮你约台好车</p>
+                </div>
+                <div class="col-xs-3">
+                    <a href="#" class="btn btn-primary btn-yellow medium-font">约约约！</a>
+                </div>
+            </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container text-center normal-font width100">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 column" style="text-align:left">
+                    <h4><img src="/images/logo/LOGOandtext.png" style="width:190px;max-width:100%"></h4>
+                    <p>我们致力于为个人用户提供诚信、专业、便捷、有保障的优质二手车交易服务平台。
+环球车网@2016</p>
+                </div>
+                <div class="col-xs-12 col-sm-3 column">
+                    <h4 class="medium-font">{{'aboutus'  | translate}}</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="">{{'ourteam'  | translate}}</a></li>
+                        <li><a href="">{{'ourbel'  | translate}}</a></li>
+                        <li><a href="">{{'friends'  | translate}}</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 column">
+                    <h4 class="medium-font">{{'contactus' | translate}}</h4>
+                    <ul class="list-unstyled">
+                        <li><span class="glyphicon glyphicon-earphone"></span> (858)345-0797</li>
+                        <li><span class="glyphicon glyphicon-envelope"></span><a href="mailto:wwaf@gmail.com"> wwaf@gmail.com</a></li>
+                        <li><span class="glyphicon glyphicon-calendar"></span> {{'mtf' | translate}}</li>
+                        <li><span class="glyphicon glyphicon-time"></span> 10:00AM - 6：00PM</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 column no-padding row" >
+                    <div class="col-xs-6 column no-padding">
+                    <img src="/images/wx.jpg" style="width:100%">
+                    </div>
+                    <div class="col-xs-5 col-xs-offset-1 column no-padding" style="text-align:left;">
+                        <h4 class="medium-font">环球社群</h4>
+                        <p>第一时间了解新车信息、旅游资讯、汽车服务、抽奖活动信息，请关注环球车网微信公众号。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="loginModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body" id="login-modal">
+            <img src="images/logo/wwaf_logo.png"></img>
+            <p class="normal-font">欢迎回来，环球车网。</p>
+            <form method="post" action="{{urls.login}}" name="loginForm">
+              <div class="forms-input">
+                <input style="border-top-right-radius: 5px;border-top-left-radius: 5px;" type="text" class="span3" name="pid" placeholder="{{'username' | translate}}">
+                <input type="text" class="span3" name="pwd" placeholder="{{'password' | translate}}">
+              </div>
+              <button type="submit" class="btn btn-primary btn-yellow btn-lg medium-font">
+                {{'login'  | translate}}
+              </button>
+            </form>
+            <div class="signup normal-font">忘了密码？没关系！通过<a href="">邮箱找回</a>  <div class="right"><a href="#" id="signup-toggle" data-toggle="modal" data-target="#signupModal"  data-dismiss="modal">{{'signup' | translate}}</a></div></div>
+
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+    <div id="signupModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body" id="signup-modal">
+            <img src="images/logo/wwaf_logo.png"></img>
+            <p class="normal-font">欢迎加入，环球车网。</p>
+            <form method="post" action="{{urls.signup}}" name="loginForm">
+              <div class="forms-input">
+                <input style="border-top-right-radius: 5px;border-top-left-radius: 5px;" type="text" class="span3" name="pid" placeholder="{{'username' | translate}}">
+                <input style="width:50%;padding-left:0px;" type="text" class="span3 col-xs-6" name="lastname" placeholder="{{'lastname' | translate}}">
+                <input style="width:50%;padding-left:0px;" type="text" class="span3 col-xs-6" name="firstname" placeholder="{{'firstname' | translate}}">
+                <input type="text" class="span3" name="pwd" placeholder="{{'password' | translate}}">
+                <input type="text" class="span3" name="confirm" placeholder="{{'confirm' | translate}}">
+              </div>
+              <button type="submit" class="btn btn-primary btn-yellow btn-lg medium-font">
+                {{'signup'  | translate}}
+              </button>
+              <div class="checkbox" style="text-align:left">
+              <label class="normal-font"><input type="checkbox" name="agree"/>我同意<a href="#">用户及个人隐私保密协议</a>。</label>
+              </div>
+            </form>
+            <div style="border:1px solid white;margin-top:-10px;margin-bottom:10px"></div>
+            <div class="signup normal-font">→已有账号？<a href="#" id="login-toggle" style="color:#00cffa" data-toggle="modal" data-target="#loginModal"  data-dismiss="modal">我要登陆</a></div>
+
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--scripts loaded here from cdn for performance -->
+    <script src="/libs/jquery/dist/jquery.min.js"></script>
+    <script src="/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/libs/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/libs/wow/dist/wow.min.js"></script>
+    <script src="/libs/jquery-ui/jquery-ui.min.js"></script>
+    <script src="/javascripts/scripts.js"></script>
+    <script src="/javascripts/buy-scripts.js"></script>
+    <!-- angular.js -->
+    <script src="/libs/angular/angular.min.js"></script>
+    <script src="/libs/angular-translate/angular-translate.min.js"></script>
+    <script src="/libs/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+    <script src="/libs/angular-local-storage/dist/angular-local-storage.min.js"></script>
+    <!-- controllers -->
+    <script src="/javascripts/controller/ctrl.js"></script>
+    <script src="/javascripts/controller/lang-ctrl.js"></script>
+    <script src="/javascripts/controller/buy-ctrl.js"></script>
+    <!-- services -->
+    <script src="/javascripts/services/url-factory.js"></script>
+    <script src="/javascripts/services/api-factory.js"></script>
+    <!-- typekit -->
+    <script src="https://use.typekit.net/exe0mze.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  </body>
+</html>

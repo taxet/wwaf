@@ -25,6 +25,9 @@ app.use('/api', api);
 app.all('/blog/*', function(req, res){
   res.sendfile('public/blog.html');
 });
+app.all('/buy', function(req, res){
+  res.sendfile('public/buy.html');
+});
 app.all('/*', function(req, res){
   res.sendfile('public/index.html');
 });

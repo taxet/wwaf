@@ -27,17 +27,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                  <a class="navbar-brand" href="#">
+                  <a class="navbar-brand" href="/">
+                  <!--
                     <img alt="Brand" src="/images/logo/wwaf_logo.png">
                     <img alt="Brand" src="/images/logo/wwaf_logo2.png">
+                    -->
+                    <img alt="Brand" src="/images/logo/LOGOandtext1.png">
                   </a>
             </div>
             <div class="navbar-collapse collapse" id="bs-navbar">
+            <!-- language toggle
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     <a ng-click="toggleLang()" href="" >{{'another' | translate}}</a>
                 </li>
             </ul>
+            -->
                 <ul class="nav navbar-nav navbar-right normal-font">
                     <li>
                         <a href="{{urls.buy}}">{{'buy' | translate}}</a>
@@ -45,12 +50,14 @@
                     <li>
                         <a href="{{urls.sell}}">{{'sell' | translate}}</a>
                     </li>
+                    <!--
                     <li>
                         <a  data-toggle="modal" title="A free Bootstrap video landing theme" href="#loginModal">{{'login' | translate}}</a>
                     </li>
                     <li>
                         <a  data-toggle="modal" title="A free Bootstrap video landing theme" href="#signupModal">{{'signup' | translate}}</a>
                     </li>
+                    -->
                     <li>
                         <a href="{{urls.help}}">{{'help' | translate}}</a>
                     </li>
@@ -105,29 +112,31 @@
     <section id="last" class="padding-70 text-center">
       <div class="text-center"><h1 class="normal-font">我们的承诺</h1></div>
           <div class="container-fluid">
-              <div class="row no-gutter no-container">
-                  <div class="col-lg-3 col-sm-6" style="background:url(images/ele1.png);background-repeat:no-repeat;background-position: top center;">
+              <div class="row no-gutter no-container width100">
+                  <div class="col-xs-3" style="background:url(images/ele1.png);background-repeat:no-repeat;background-position: top center;">
                     <img src="images/ele1.png">
                     <div class="ele-no1">
                       <h2 style="color:#ff0038" class="normal-font">安心收购</h2>
                       <p class="light-font">选购汽车往往大家非常头疼的事。在环球车网，我们会为您提供全方位的汽车评估与报告，以便让您不需要过多的专业知识便可以购买到实惠可靠的车辆。</p>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-sm-6" style="background:url(images/ele2.png);background-repeat:no-repeat;background-position: top center;">
+                  <div class="col-xs-3" style="background:url(images/ele2.png);background-repeat:no-repeat;background-position: top center;">
                     <img src="images/ele2.png">
                     <div class="ele-no2 normal-font">
+                    <div style="text-align:left;margin-left:auto; margin-right:auto; width: 65%">
                       <span class="glyphicon glyphicon-signal"></span> 全方位汽车报告<br/>
                       <span class="glyphicon glyphicon-lock"></span> 30 天 /100 miles 质保
+                      </div>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-sm-6" style="background:url(images/ele3.png);background-repeat:no-repeat;background-position: top center;">
+                  <div class="col-xs-3" style="background:url(images/ele3.png);background-repeat:no-repeat;background-position: top center;">
                     <img src="images/ele3.png">
                     <div class="ele-no3 normal-font">
                       <h2 style="color:#00cffa" class="normal-font">轻松出售</h2>
                       <p class="light-font">为了节省您宝贵的时间，环球车网提供一站式的销售服务。我们的技术人员会亲自上门，对您的车辆进行全面评估，并根据我们庞大的价格系统进行合理的估价，帮您轻松卖车。</p>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-sm-6" style="background:url(images/ele4.png);background-repeat:no-repeat;background-position: top center;">
+                  <div class="col-xs-3" style="background:url(images/ele4.png);background-repeat:no-repeat;background-position: top center;">
                     <img src="images/ele4.png">
                     <div class="ele-no4">
                       <span class="glyphicon glyphicon-ok-circle"></span> 一站式卖车服务
@@ -137,10 +146,10 @@
           </div>
     </section>
     <footer id="footer">
-        <div class="container text-center normal-font">
+        <div class="container text-center normal-font width100">
             <div class="row">
                 <div class="col-xs-12 col-sm-3 column" style="text-align:left">
-                    <h4><img src="/images/logo/LOGOandtext.png" style="width:190px"></h4>
+                    <h4><img src="/images/logo/LOGOandtext.png" style="width:190px;max-width:100%"></h4>
                     <p>我们致力于为个人用户提供诚信、专业、便捷、有保障的优质二手车交易服务平台。
 环球车网@2016</p>
                 </div>

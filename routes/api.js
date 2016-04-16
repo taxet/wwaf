@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
+var carsModule = require('../modules/cars.json');
+
 /* GET home page. */
 router.get('/success', function(req, res, next) {
   res.json({success:'ok'});
@@ -22,7 +24,11 @@ router.get('/blogs/index', function(req, res, next) {
     'content': '大多数华人同胞们或多或少被黑心dealer坑过。更重要的你花了比美国人多得钱，得到的却是被种族歧视对待的服务；甚至出现dealer对待本地人是迎来送往，笑脸连连；而在对待中国人的时候，却表现得爱搭不理？为什么我们花的钱比本地人多，却得不到平等的尊重？为什么我们买车花的钱更多，汽车出现的问题也更多？为什么我们华人买车就有这么多问题...',
     'link': '/blog/test'
   });
-})
+});
+
+router.get('/cars', function(req, res, next) {
+    res.json(carsModule);
+});
 
 module.exports = router;
 
